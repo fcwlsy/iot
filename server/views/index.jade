@@ -1,0 +1,13 @@
+doctype html
+html
+ head
+  title=title
+  script(src='./scripts/jquery-2.1.4.min.js')
+  script(src='./scripts/echarts.js')
+  script(src='./scripts/echarts-sensor.js')
+  script(src='./scripts/led.js')
+ body
+  label 开关灯控制：
+  input(id="led",type="checkbox")
+  label(id="status_label") 
+  div(id="container",style="min-width: 310px;height:400px;margin:0 auto")
