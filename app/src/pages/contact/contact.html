@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      控制Led
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-icon item-left name="bulb"></ion-icon>
+            <ion-label>电灯开关</ion-label> 
+            <ion-toggle item-right color="danger" [(ngModel)]="ledState" (ionChange)="switch()"></ion-toggle>   
+        </ion-item>
+    </ion-list>
+</ion-content>
